@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import App from "./page/home/index";
+import DetailApp from './page/detailrestaurant/index'
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
@@ -18,7 +19,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <Router>
     <Routes>
-      <Route path="/home" element={<App />} />
+      <Route path="/" element={<App />} />
+      <Route path="/:id/:name" element={<DetailApp />} />
     </Routes>
   </Router>
   // <React.StrictMode>
