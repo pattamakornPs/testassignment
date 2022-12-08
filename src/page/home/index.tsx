@@ -124,7 +124,7 @@ export default function App() {
                       fullWidth
                       renderInput={(params) => 
                         <div ref={params.InputProps.ref}>
-                          <input type="text" {...params.inputProps} style={{ 
+                          <input placeholder='Search name...' type="text" {...params.inputProps} style={{ 
                             marginTop:9,
                             border:"1px solid #134B8A" ,
                             borderRadius:"50px",
